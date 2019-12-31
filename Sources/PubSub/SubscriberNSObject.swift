@@ -15,7 +15,7 @@ open class SubscriberNSObject: NSObject, Subscriber{
         self.unsubscribers.append(newUnsubscriber)
     }
     
-    public func removeSubscriptions(){
+    open func removeSubscriptions(){
         for unsubscribe in unsubscribers{
             unsubscribe()
         }
